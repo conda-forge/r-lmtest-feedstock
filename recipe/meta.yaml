@@ -1,4 +1,4 @@
-{% set version = "0.9-38" %}
+{% set version = "0.9-39" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lmtest_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lmtest/lmtest_{{ version }}.tar.gz
-  sha256: 32a22cea45398ffc5732d9f5c0391431d0cdd3a9e29cc7b77bea32c1eb4a216b
+  sha256: 71f8d67cbe559b33fe02910a3e98cddc60c9dcc421c64f7878c647218f07d488
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
